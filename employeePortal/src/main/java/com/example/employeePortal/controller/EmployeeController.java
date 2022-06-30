@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.employeePortal.model.Employee;
 import com.example.employeePortal.service.EmployeeService;
 
+//to enable CORS
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/employee")
@@ -38,6 +39,7 @@ public class EmployeeController {
 	}
 	}
 	
+	//to fetch employee by ID
 	@RequestMapping(value="/getEmployee/{id}",method = RequestMethod.GET)
     public ResponseEntity<Optional<Employee>> getEmployeeById(@PathVariable(value = "id") Long employeeId)
      {

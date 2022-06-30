@@ -1,0 +1,11 @@
+CREATE DATABASE test_db
+USE test_db
+ 
+DROP TABLE IF EXISTS employee
+ 
+CREATE TABLE mployee(
+ id BIGINT AUTO_INCREMENT PRIMARY KEY,
+ firstName VARCHAR(255), 
+ lastName VARCHAR(255)
+ emailId VARCHAR(255)
+)
